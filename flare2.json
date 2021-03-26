@@ -1,3 +1,4 @@
+[
 {
     "name": "analytics",
     "children": [
@@ -27,8 +28,8 @@
         ]
     }
     ]
-    },
-    {
+},
+{
     "name": "animate",
     "children": [
     {"name": "Easing", "size": 17010},
@@ -57,4 +58,5 @@
     {"name": "TransitionEvent", "size": 1116},
     {"name": "Tween", "size": 6006}
     ]
-    }
+}
+]
