@@ -7,26 +7,26 @@
     {
      "name": "cluster",
      "children": [
-      {"name": "AgglomerativeCluster", "link": "http://rcc.ibict.br/"},
-      {"name": "CommunityStructure", "link": "http://rcc.ibict.br/"},
-      {"name": "HierarchicalCluster", "link": "http://rcc.ibict.br/"},
-      {"name": "MergeEdge", "link": "http://rcc.ibict.br/"}
+      {"name": "AgglomerativeCluster", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "CommunityStructure", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "HierarchicalCluster", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "MergeEdge", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
     {
      "name": "graph",
      "children": [
-      {"name": "BetweennessCentrality", "link": "http://rcc.ibict.br/"},
-      {"name": "LinkDistance", "link": "http://rcc.ibict.br/"},
-      {"name": "MaxFlowMinCut", "link": "http://rcc.ibict.br/"},
-      {"name": "ShortestPaths", "link": "http://rcc.ibict.br/"},
-      {"name": "SpanningTree", "link": "http://rcc.ibict.br/"}
+      {"name": "BetweennessCentrality", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "LinkDistance", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "MaxFlowMinCut", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "ShortestPaths", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "SpanningTree", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
     {
      "name": "optimization",
      "children": [
-      {"name": "AspectRatioBanker", "link": "http://rcc.ibict.br/"}
+      {"name": "AspectRatioBanker", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     }
    ]
@@ -34,31 +34,31 @@
   {
    "name": "animate",
    "children": [
-    {"name": "Easing", "link": "http://rcc.ibict.br/"},
-    {"name": "FunctionSequence", "link": "http://rcc.ibict.br/"},
+    {"name": "Easing", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "FunctionSequence", "link": "http://rcc.ibict.br/" , "size": 1},
     {
      "name": "interpolate",
      "children": [
-      {"name": "ArrayInterpolator", "link": "http://rcc.ibict.br/"},
-      {"name": "ColorInterpolator", "link": "http://rcc.ibict.br/"},
-      {"name": "DateInterpolator", "link": "http://rcc.ibict.br/"},
-      {"name": "Interpolator", "link": "http://rcc.ibict.br/"},
-      {"name": "MatrixInterpolator", "link": "http://rcc.ibict.br/"},
-      {"name": "NumberInterpolator", "link": "http://rcc.ibict.br/"},
-      {"name": "ObjectInterpolator", "link": "http://rcc.ibict.br/"},
-      {"name": "PointInterpolator", "link": "http://rcc.ibict.br/"},
-      {"name": "RectangleInterpolator", "link": "http://rcc.ibict.br/"}
+      {"name": "ArrayInterpolator", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "ColorInterpolator", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "DateInterpolator", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "Interpolator", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "MatrixInterpolator", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "NumberInterpolator", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "ObjectInterpolator", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "PointInterpolator", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "RectangleInterpolator", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
-    {"name": "ISchedulable", "link": "http://rcc.ibict.br/"},
-    {"name": "Parallel", "link": "http://rcc.ibict.br/"},
-    {"name": "Pause", "link": "http://rcc.ibict.br/"},
-    {"name": "Scheduler", "link": "http://rcc.ibict.br/"},
-    {"name": "Sequence", "link": "http://rcc.ibict.br/"},
-    {"name": "Transition", "link": "http://rcc.ibict.br/"},
-    {"name": "Transitioner", "link": "http://rcc.ibict.br/"},
-    {"name": "TransitionEvent", "link": "http://rcc.ibict.br/"},
-    {"name": "Tween", "link": "http://rcc.ibict.br/"}
+    {"name": "ISchedulable", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Parallel", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Pause", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Scheduler", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Sequence", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Transition", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Transitioner", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "TransitionEvent", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Tween", "link": "http://rcc.ibict.br/" , "size": 1}
    ]
   },
   {
@@ -67,177 +67,177 @@
     {
      "name": "converters",
      "children": [
-      {"name": "Converters", "link": "http://rcc.ibict.br/"},
-      {"name": "DelimitedTextConverter", "link": "http://rcc.ibict.br/"},
-      {"name": "GraphMLConverter", "link": "http://rcc.ibict.br/"},
-      {"name": "IDataConverter", "link": "http://rcc.ibict.br/"},
-      {"name": "JSONConverter", "link": "http://rcc.ibict.br/"}
+      {"name": "Converters", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "DelimitedTextConverter", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "GraphMLConverter", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "IDataConverter", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "JSONConverter", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
-    {"name": "DataField", "link": "http://rcc.ibict.br/"},
-    {"name": "DataSchema", "link": "http://rcc.ibict.br/"},
-    {"name": "DataSet", "link": "http://rcc.ibict.br/"},
-    {"name": "DataSource", "link": "http://rcc.ibict.br/"},
-    {"name": "DataTable", "link": "http://rcc.ibict.br/"},
-    {"name": "DataUtil", "link": "http://rcc.ibict.br/"}
+    {"name": "DataField", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "DataSchema", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "DataSet", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "DataSource", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "DataTable", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "DataUtil", "link": "http://rcc.ibict.br/" , "size": 1}
    ]
   },
   {
    "name": "display",
    "children": [
-    {"name": "DirtySprite", "link": "http://rcc.ibict.br/"},
-    {"name": "LineSprite", "link": "http://rcc.ibict.br/"},
-    {"name": "RectSprite", "link": "http://rcc.ibict.br/"},
-    {"name": "TextSprite", "link": "http://rcc.ibict.br/"}
+    {"name": "DirtySprite", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "LineSprite", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "RectSprite", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "TextSprite", "link": "http://rcc.ibict.br/" , "size": 1}
    ]
   },
   {
    "name": "flex",
    "children": [
-    {"name": "FlareVis", "link": "http://rcc.ibict.br/"}
+    {"name": "FlareVis", "link": "http://rcc.ibict.br/" , "size": 1}
    ]
   },
   {
    "name": "physics",
    "children": [
-    {"name": "DragForce", "link": "http://rcc.ibict.br/"},
-    {"name": "GravityForce", "link": "http://rcc.ibict.br/"},
-    {"name": "IForce", "link": "http://rcc.ibict.br/"},
-    {"name": "NBodyForce", "link": "http://rcc.ibict.br/"},
-    {"name": "Particle", "link": "http://rcc.ibict.br/"},
-    {"name": "Simulation", "link": "http://rcc.ibict.br/"},
-    {"name": "Spring", "link": "http://rcc.ibict.br/"},
-    {"name": "SpringForce", "link": "http://rcc.ibict.br/"}
+    {"name": "DragForce", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "GravityForce", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "IForce", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "NBodyForce", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Particle", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Simulation", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Spring", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "SpringForce", "link": "http://rcc.ibict.br/" , "size": 1}
    ]
   },
   {
    "name": "query",
    "children": [
-    {"name": "AggregateExpression", "link": "http://rcc.ibict.br/"},
-    {"name": "And", "link": "http://rcc.ibict.br/"},
-    {"name": "Arithmetic", "link": "http://rcc.ibict.br/"},
-    {"name": "Average", "link": "http://rcc.ibict.br/"},
-    {"name": "BinaryExpression", "link": "http://rcc.ibict.br/"},
-    {"name": "Comparison", "link": "http://rcc.ibict.br/"},
-    {"name": "CompositeExpression", "link": "http://rcc.ibict.br/"},
-    {"name": "Count", "link": "http://rcc.ibict.br/"},
-    {"name": "DateUtil", "link": "http://rcc.ibict.br/"},
-    {"name": "Distinct", "link": "http://rcc.ibict.br/"},
-    {"name": "Expression", "link": "http://rcc.ibict.br/"},
-    {"name": "ExpressionIterator", "link": "http://rcc.ibict.br/"},
-    {"name": "Fn", "link": "http://rcc.ibict.br/"},
-    {"name": "If", "link": "http://rcc.ibict.br/"},
-    {"name": "IsA", "link": "http://rcc.ibict.br/"},
-    {"name": "Literal", "link": "http://rcc.ibict.br/"},
-    {"name": "Match", "link": "http://rcc.ibict.br/"},
-    {"name": "Maximum", "link": "http://rcc.ibict.br/"},
+    {"name": "AggregateExpression", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "And", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Arithmetic", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Average", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "BinaryExpression", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Comparison", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "CompositeExpression", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Count", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "DateUtil", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Distinct", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Expression", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "ExpressionIterator", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Fn", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "If", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "IsA", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Literal", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Match", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Maximum", "link": "http://rcc.ibict.br/" , "size": 1},
     {
      "name": "methods",
      "children": [
-      {"name": "add", "link": "http://rcc.ibict.br/"},
-      {"name": "and", "link": "http://rcc.ibict.br/"},
-      {"name": "average", "link": "http://rcc.ibict.br/"},
-      {"name": "count", "link": "http://rcc.ibict.br/"},
-      {"name": "distinct", "link": "http://rcc.ibict.br/"},
-      {"name": "div", "link": "http://rcc.ibict.br/"},
-      {"name": "eq", "link": "http://rcc.ibict.br/"},
-      {"name": "fn", "link": "http://rcc.ibict.br/"},
-      {"name": "gt", "link": "http://rcc.ibict.br/"},
-      {"name": "gte", "link": "http://rcc.ibict.br/"},
-      {"name": "iff", "link": "http://rcc.ibict.br/"},
-      {"name": "isa", "link": "http://rcc.ibict.br/"},
-      {"name": "lt", "link": "http://rcc.ibict.br/"},
-      {"name": "lte", "link": "http://rcc.ibict.br/"},
-      {"name": "max", "link": "http://rcc.ibict.br/"},
-      {"name": "min", "link": "http://rcc.ibict.br/"},
-      {"name": "mod", "link": "http://rcc.ibict.br/"},
-      {"name": "mul", "link": "http://rcc.ibict.br/"},
-      {"name": "neq", "link": "http://rcc.ibict.br/"},
-      {"name": "not", "link": "http://rcc.ibict.br/"},
-      {"name": "or", "link": "http://rcc.ibict.br/"},
-      {"name": "orderby", "link": "http://rcc.ibict.br/"},
-      {"name": "range", "link": "http://rcc.ibict.br/"},
-      {"name": "select", "link": "http://rcc.ibict.br/"},
-      {"name": "stddev", "link": "http://rcc.ibict.br/"},
-      {"name": "sub", "link": "http://rcc.ibict.br/"},
-      {"name": "sum", "link": "http://rcc.ibict.br/"},
-      {"name": "update", "link": "http://rcc.ibict.br/"},
-      {"name": "variance", "link": "http://rcc.ibict.br/"},
-      {"name": "where", "link": "http://rcc.ibict.br/"},
-      {"name": "xor", "link": "http://rcc.ibict.br/"},
-      {"name": "_", "link": "http://rcc.ibict.br/"}
+      {"name": "add", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "and", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "average", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "count", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "distinct", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "div", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "eq", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "fn", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "gt", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "gte", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "iff", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "isa", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "lt", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "lte", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "max", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "min", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "mod", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "mul", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "neq", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "not", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "or", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "orderby", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "range", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "select", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "stddev", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "sub", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "sum", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "update", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "variance", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "where", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "xor", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "_", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
-    {"name": "Minimum", "link": "http://rcc.ibict.br/"},
-    {"name": "Not", "link": "http://rcc.ibict.br/"},
-    {"name": "Or", "link": "http://rcc.ibict.br/"},
-    {"name": "Query", "link": "http://rcc.ibict.br/"},
-    {"name": "Range", "link": "http://rcc.ibict.br/"},
-    {"name": "StringUtil", "link": "http://rcc.ibict.br/"},
-    {"name": "Sum", "link": "http://rcc.ibict.br/"},
-    {"name": "Variable", "link": "http://rcc.ibict.br/"},
-    {"name": "Variance", "link": "http://rcc.ibict.br/"},
-    {"name": "Xor", "link": "http://rcc.ibict.br/"}
+    {"name": "Minimum", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Not", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Or", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Query", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Range", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "StringUtil", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Sum", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Variable", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Variance", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Xor", "link": "http://rcc.ibict.br/" , "size": 1}
    ]
   },
   {
    "name": "scale",
    "children": [
-    {"name": "IScaleMap", "link": "http://rcc.ibict.br/"},
-    {"name": "LinearScale", "link": "http://rcc.ibict.br/"},
-    {"name": "LogScale", "link": "http://rcc.ibict.br/"},
-    {"name": "OrdinalScale", "link": "http://rcc.ibict.br/"},
-    {"name": "QuantileScale", "link": "http://rcc.ibict.br/"},
-    {"name": "QuantitativeScale", "link": "http://rcc.ibict.br/"},
-    {"name": "RootScale", "link": "http://rcc.ibict.br/"},
-    {"name": "Scale", "link": "http://rcc.ibict.br/"},
-    {"name": "ScaleType", "link": "http://rcc.ibict.br/"},
-    {"name": "TimeScale", "link": "http://rcc.ibict.br/"}
+    {"name": "IScaleMap", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "LinearScale", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "LogScale", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "OrdinalScale", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "QuantileScale", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "QuantitativeScale", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "RootScale", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Scale", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "ScaleType", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "TimeScale", "link": "http://rcc.ibict.br/" , "size": 1}
    ]
   },
   {
    "name": "util",
    "children": [
-    {"name": "Arrays", "link": "http://rcc.ibict.br/"},
-    {"name": "Colors", "link": "http://rcc.ibict.br/"},
-    {"name": "Dates", "link": "http://rcc.ibict.br/"},
-    {"name": "Displays", "link": "http://rcc.ibict.br/"},
-    {"name": "Filter", "link": "http://rcc.ibict.br/"},
-    {"name": "Geometry", "link": "http://rcc.ibict.br/"},
+    {"name": "Arrays", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Colors", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Dates", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Displays", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Filter", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Geometry", "link": "http://rcc.ibict.br/" , "size": 1},
     {
      "name": "heap",
      "children": [
-      {"name": "FibonacciHeap", "link": "http://rcc.ibict.br/"},
-      {"name": "HeapNode", "link": "http://rcc.ibict.br/"}
+      {"name": "FibonacciHeap", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "HeapNode", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
-    {"name": "IEvaluable", "link": "http://rcc.ibict.br/"},
-    {"name": "IPredicate", "link": "http://rcc.ibict.br/"},
-    {"name": "IValueProxy", "link": "http://rcc.ibict.br/"},
+    {"name": "IEvaluable", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "IPredicate", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "IValueProxy", "link": "http://rcc.ibict.br/" , "size": 1},
     {
      "name": "math",
      "children": [
-      {"name": "DenseMatrix", "link": "http://rcc.ibict.br/"},
-      {"name": "IMatrix", "link": "http://rcc.ibict.br/"},
-      {"name": "SparseMatrix", "link": "http://rcc.ibict.br/"}
+      {"name": "DenseMatrix", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "IMatrix", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "SparseMatrix", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
-    {"name": "Maths", "link": "http://rcc.ibict.br/"},
-    {"name": "Orientation", "link": "http://rcc.ibict.br/"},
+    {"name": "Maths", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Orientation", "link": "http://rcc.ibict.br/" , "size": 1},
     {
      "name": "palette",
      "children": [
-      {"name": "ColorPalette", "link": "http://rcc.ibict.br/"},
-      {"name": "Palette", "link": "http://rcc.ibict.br/"},
-      {"name": "ShapePalette", "link": "http://rcc.ibict.br/"},
-      {"name": "SizePalette", "link": "http://rcc.ibict.br/"}
+      {"name": "ColorPalette", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "Palette", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "ShapePalette", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "SizePalette", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
-    {"name": "Property", "link": "http://rcc.ibict.br/"},
-    {"name": "Shapes", "link": "http://rcc.ibict.br/"},
-    {"name": "Sort", "link": "http://rcc.ibict.br/"},
-    {"name": "Stats", "link": "http://rcc.ibict.br/"},
-    {"name": "Strings", "link": "http://rcc.ibict.br/"}
+    {"name": "Property", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Shapes", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Sort", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Stats", "link": "http://rcc.ibict.br/" , "size": 1},
+    {"name": "Strings", "link": "http://rcc.ibict.br/" , "size": 1}
    ]
   },
   {
@@ -246,66 +246,66 @@
     {
      "name": "axis",
      "children": [
-      {"name": "Axes", "link": "http://rcc.ibict.br/"},
-      {"name": "Axis", "link": "http://rcc.ibict.br/"},
-      {"name": "AxisGridLine", "link": "http://rcc.ibict.br/"},
-      {"name": "AxisLabel", "link": "http://rcc.ibict.br/"},
-      {"name": "CartesianAxes", "link": "http://rcc.ibict.br/"}
+      {"name": "Axes", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "Axis", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "AxisGridLine", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "AxisLabel", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "CartesianAxes", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
     {
      "name": "controls",
      "children": [
-      {"name": "AnchorControl", "link": "http://rcc.ibict.br/"},
-      {"name": "ClickControl", "link": "http://rcc.ibict.br/"},
-      {"name": "Control", "link": "http://rcc.ibict.br/"},
-      {"name": "ControlList", "link": "http://rcc.ibict.br/"},
-      {"name": "DragControl", "link": "http://rcc.ibict.br/"},
-      {"name": "ExpandControl", "link": "http://rcc.ibict.br/"},
-      {"name": "HoverControl", "link": "http://rcc.ibict.br/"},
-      {"name": "IControl", "link": "http://rcc.ibict.br/"},
-      {"name": "PanZoomControl", "link": "http://rcc.ibict.br/"},
-      {"name": "SelectionControl", "link": "http://rcc.ibict.br/"},
-      {"name": "TooltipControl", "link": "http://rcc.ibict.br/"}
+      {"name": "AnchorControl", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "ClickControl", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "Control", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "ControlList", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "DragControl", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "ExpandControl", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "HoverControl", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "IControl", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "PanZoomControl", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "SelectionControl", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "TooltipControl", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
     {
      "name": "data",
      "children": [
-      {"name": "Data", "link": "http://rcc.ibict.br/"},
-      {"name": "DataList", "link": "http://rcc.ibict.br/"},
-      {"name": "DataSprite", "link": "http://rcc.ibict.br/"},
-      {"name": "EdgeSprite", "link": "http://rcc.ibict.br/"},
-      {"name": "NodeSprite", "link": "http://rcc.ibict.br/"},
+      {"name": "Data", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "DataList", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "DataSprite", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "EdgeSprite", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "NodeSprite", "link": "http://rcc.ibict.br/" , "size": 1},
       {
        "name": "render",
        "children": [
-        {"name": "ArrowType", "link": "http://rcc.ibict.br/"},
-        {"name": "EdgeRenderer", "link": "http://rcc.ibict.br/"},
-        {"name": "IRenderer", "link": "http://rcc.ibict.br/"},
-        {"name": "ShapeRenderer", "link": "http://rcc.ibict.br/"}
+        {"name": "ArrowType", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "EdgeRenderer", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "IRenderer", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "ShapeRenderer", "link": "http://rcc.ibict.br/" , "size": 1}
        ]
       },
-      {"name": "ScaleBinding", "link": "http://rcc.ibict.br/"},
-      {"name": "Tree", "link": "http://rcc.ibict.br/"},
-      {"name": "TreeBuilder", "link": "http://rcc.ibict.br/"}
+      {"name": "ScaleBinding", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "Tree", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "TreeBuilder", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
     {
      "name": "events",
      "children": [
-      {"name": "DataEvent", "link": "http://rcc.ibict.br/"},
-      {"name": "SelectionEvent", "link": "http://rcc.ibict.br/"},
-      {"name": "TooltipEvent", "link": "http://rcc.ibict.br/"},
-      {"name": "VisualizationEvent", "link": "http://rcc.ibict.br/"}
+      {"name": "DataEvent", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "SelectionEvent", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "TooltipEvent", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "VisualizationEvent", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
     {
      "name": "legend",
      "children": [
-      {"name": "Legend", "link": "http://rcc.ibict.br/"},
-      {"name": "LegendItem", "link": "http://rcc.ibict.br/"},
-      {"name": "LegendRange", "link": "http://rcc.ibict.br/"}
+      {"name": "Legend", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "LegendItem", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "LegendRange", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
     {
@@ -314,66 +314,66 @@
       {
        "name": "distortion",
        "children": [
-        {"name": "BifocalDistortion", "link": "http://rcc.ibict.br/"},
-        {"name": "Distortion", "link": "http://rcc.ibict.br/"},
-        {"name": "FisheyeDistortion", "link": "http://rcc.ibict.br/"}
+        {"name": "BifocalDistortion", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "Distortion", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "FisheyeDistortion", "link": "http://rcc.ibict.br/" , "size": 1}
        ]
       },
       {
        "name": "encoder",
        "children": [
-        {"name": "ColorEncoder", "link": "http://rcc.ibict.br/"},
-        {"name": "Encoder", "link": "http://rcc.ibict.br/"},
-        {"name": "PropertyEncoder", "link": "http://rcc.ibict.br/"},
-        {"name": "ShapeEncoder", "link": "http://rcc.ibict.br/"},
-        {"name": "SizeEncoder", "link": "http://rcc.ibict.br/"}
+        {"name": "ColorEncoder", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "Encoder", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "PropertyEncoder", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "ShapeEncoder", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "SizeEncoder", "link": "http://rcc.ibict.br/" , "size": 1}
        ]
       },
       {
        "name": "filter",
        "children": [
-        {"name": "FisheyeTreeFilter", "link": "http://rcc.ibict.br/"},
-        {"name": "GraphDistanceFilter", "link": "http://rcc.ibict.br/"},
-        {"name": "VisibilityFilter", "link": "http://rcc.ibict.br/"}
+        {"name": "FisheyeTreeFilter", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "GraphDistanceFilter", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "VisibilityFilter", "link": "http://rcc.ibict.br/" , "size": 1}
        ]
       },
-      {"name": "IOperator", "link": "http://rcc.ibict.br/"},
+      {"name": "IOperator", "link": "http://rcc.ibict.br/" , "size": 1},
       {
        "name": "label",
        "children": [
-        {"name": "Labeler", "link": "http://rcc.ibict.br/"},
-        {"name": "RadialLabeler", "link": "http://rcc.ibict.br/"},
-        {"name": "StackedAreaLabeler", "link": "http://rcc.ibict.br/"}
+        {"name": "Labeler", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "RadialLabeler", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "StackedAreaLabeler", "link": "http://rcc.ibict.br/" , "size": 1}
        ]
       },
       {
        "name": "layout",
        "children": [
-        {"name": "AxisLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "BundledEdgeRouter", "link": "http://rcc.ibict.br/"},
-        {"name": "CircleLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "CirclePackingLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "DendrogramLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "ForceDirectedLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "IcicleTreeLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "IndentedTreeLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "Layout", "link": "http://rcc.ibict.br/"},
-        {"name": "NodeLinkTreeLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "PieLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "RadialTreeLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "RandomLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "StackedAreaLayout", "link": "http://rcc.ibict.br/"},
-        {"name": "TreeMapLayout", "link": "http://rcc.ibict.br/"}
+        {"name": "AxisLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "BundledEdgeRouter", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "CircleLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "CirclePackingLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "DendrogramLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "ForceDirectedLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "IcicleTreeLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "IndentedTreeLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "Layout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "NodeLinkTreeLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "PieLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "RadialTreeLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "RandomLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "StackedAreaLayout", "link": "http://rcc.ibict.br/" , "size": 1},
+        {"name": "TreeMapLayout", "link": "http://rcc.ibict.br/" , "size": 1}
        ]
       },
-      {"name": "Operator", "link": "http://rcc.ibict.br/"},
-      {"name": "OperatorList", "link": "http://rcc.ibict.br/"},
-      {"name": "OperatorSequence", "link": "http://rcc.ibict.br/"},
-      {"name": "OperatorSwitch", "link": "http://rcc.ibict.br/"},
-      {"name": "SortOperator", "link": "http://rcc.ibict.br/"}
+      {"name": "Operator", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "OperatorList", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "OperatorSequence", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "OperatorSwitch", "link": "http://rcc.ibict.br/" , "size": 1},
+      {"name": "SortOperator", "link": "http://rcc.ibict.br/" , "size": 1}
      ]
     },
-    {"name": "Visualization", "link": "http://rcc.ibict.br/"}
+    {"name": "Visualization", "link": "http://rcc.ibict.br/" , "size": 1}
    ]
   }
  ]
