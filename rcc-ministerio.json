@@ -1,0 +1,1093 @@
+{
+   "name":"",
+   "children":[
+      {
+         "name":"Rede de Suporte",
+         "size":1,
+         "link":"",
+         "children":[
+            {
+               "name":"Quem somos?",
+               "children":[
+                  {
+                     "name":"Órgãos e Agências de Fomento",
+                     "children":[
+                        {
+                           "name":"Órgãos e agências de fomento internacionais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Órgãos e agências de fomento nacionais",
+                           "children":[
+                              {
+                                 "name":"Finep",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":"http://www.finep.gov.br/"
+                              },
+                              {
+                                 "name":"Fundep",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":"http://www.fundep.ufmg.br/"
+                              }
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Empresas",
+                     "children":[
+                        {
+                           "name":"Empresas Estatais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Empresa Pública",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Sociedades de economia mista",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Pessoas físicas",
+                     "children":[
+                        {
+                           "name":"Pesquisadores",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Ministério da Ciência, Tecnologia e Inovações",
+                     "children":[
+                        {
+                           "name":"Secretaria de Estruturas Financeiras e de Projetos - SEFIP",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Oportunidades",
+               "children":[
+                  {
+                     "name":"Editais",
+                     "children":[
+                        
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Demandas",
+                     "children":[
+                        
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Eventos",
+                     "children":[
+                        
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Serviços",
+               "children":[
+                  {
+                     "name":"Serviços laboratoriais",
+                     "children":[
+                        
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Serviços de informação",
+                     "children":[
+                        
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Serviços tecnológicos",
+                     "children":[
+                        
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Vitrine",
+               "children":[
+                  
+               ],
+               "size":1,
+               "link":""
+            }
+         ]
+      },
+      {
+         "name":"Rede de formação de pessoal",
+         "size":1,
+         "link":"",
+         "children":[
+            {
+               "name":"Pública",
+               "children":[
+                  {
+                     "name":"Universidades",
+                     "children":[
+                        {
+                           "name":"Federais",
+                           "children":[
+                              {
+                                 "name":"UnB",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":"www.unb.br"
+                              },
+                              {
+                                 "name":"UFG",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":"www.ufg.br"
+                              }
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Estaduais",
+                           "children":[
+                              {
+                                 "name":"USP",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":"www.usp.br"
+                              },
+                              {
+                                 "name":"UNESP",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":"www.unesp.br"
+                              },
+                              {
+                                 "name":"UNICAMP",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":"www.unicamp.br"
+                              },
+                              {
+                                 "name":"UNESB",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              }
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Municipais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Faculdades",
+                     "children":[
+                        {
+                           "name":"Federais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Estaduais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Municipais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Institutos ou Escolas Superiores",
+                     "children":[
+                        {
+                           "name":"Federais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Estaduais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Municipais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Centros Universitários",
+                     "children":[
+                        {
+                           "name":"Federais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Estaduais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Municipais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Escolas técnicas ou Centros de Educação Tecnológica",
+                     "children":[
+                        {
+                           "name":"Federais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Estaduais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Municipais",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Privadas",
+               "children":[
+                  {
+                     "name":"Com fins lucrativos",
+                     "children":[
+                        {
+                           "name":"Universidades",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Faculdades",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Institutos ou Escolas Superiores",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Centros Universitários",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Escolas técnicas ou Centros de Educação Tecnológica",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Sem fins lucrativos",
+                     "children":[
+                        {
+                           "name":"Comunitárias",
+                           "children":[
+                              {
+                                 "name":"Universidades",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Faculdades",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Institutos ou Escolas Superiores",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Centros Universitários",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Escolas técnicas ou Centros de Educação Tecnológica",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              }
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Confessionais",
+                           "children":[
+                              {
+                                 "name":"Universidades",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Faculdades",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Institutos ou Escolas Superiores",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Centros Universitários",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Escolas técnicas ou Centros de Educação Tecnológica",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              }
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Filantrópicas",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Universidades",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Faculdades",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Institutos ou Escolas Superiores",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Centros Universitários",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Escolas técnicas ou Centros de Educação Tecnológica",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Sistema S",
+               "children":[
+                  {
+                     "name":"SENAI",
+                     "children":[
+                        
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"SESI",
+                     "children":[
+                        
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"SESC",
+                     "children":[
+                        
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Quem somos?",
+               "children":[
+                  {
+                     "name":"Ministério da Ciência, Tecnologia e Inovações",
+                     "children":[
+                        {
+                           "name":"Secretaria de Pesquisa e Formação Científica - SEPEF",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            }
+         ]
+      },
+      {
+         "name":"Rede de Pesquisa",
+         "size":1,
+         "link":"",
+         "children":[
+            {
+               "name":"Unidades de pesquisa",
+               "children":[
+                  {
+                     "name":"Unidades de pesquisa governamentais",
+                     "children":[
+                        {
+                           "name":"Unidades de pesquisa governamentais federais",
+                           "children":[
+                              {
+                                 "name":"Centros de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Institutos de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Laboratórios de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Redes de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              }
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Unidades de pesquisa governamentais estaduais",
+                           "children":[
+                              {
+                                 "name":"Centros de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Institutos de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Laboratórios de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Redes de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              }
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Unidades de pesquisa governamentais municipais",
+                           "children":[
+                              {
+                                 "name":"Centros de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Institutos de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Laboratórios de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Redes de pesquisa",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              }
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Unidades de pesquisa do terceiro setor",
+                     "children":[
+                        {
+                           "name":"Associações de pesquisa",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Fundações de pesquisa",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Institutos de pesquisa",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Laboratórios de pesquisa",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Organizações de pesquisa",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Redes de pesquisa",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Quem somos?",
+               "children":[
+                  {
+                     "name":"Ministério da Ciência, Tecnologia e Inovações",
+                     "children":[
+                        {
+                           "name":"Secretaria de Pesquisa e Formação Científica - SEPEF",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            }
+         ]
+      },
+      {
+         "name":"Rede de Inovação",
+         "size":1,
+         "link":"",
+         "children":[
+            {
+               "name":"Redes",
+               "children":[
+                  {
+                     "name":"Redes Científicas",
+                     "children":[
+                        
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Redes de conhecimento",
+                     "children":[
+                        {
+                           "name":"Redes de colaboração",
+                           "children":[
+                              {
+                                 "name":"Redes de coautoria",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              },
+                              {
+                                 "name":"Redes de colaboração entre instituições",
+                                 "children":[
+                                    
+                                 ],
+                                 "size":1,
+                                 "link":""
+                              }
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Rede de citação patentes",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
+                     "name":"Redes de parceria",
+                     "children":[
+                        {
+                           "name":"Tecnologias aplicadas",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Mecânica e Manufatura",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Biotecnologia",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Materiais e química",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        },
+                        {
+                           "name":"Tecnologias da Informação e Comunicação",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Quem somos?",
+               "children":[
+                  {
+                     "name":"Ministério da Ciência, Tecnologia e Inovações",
+                     "children":[
+                        {
+                           "name":"Secretaria de Empreendedorismo e Inovação - SEMPI",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            }
+         ]
+      },
+      {
+         "name":"Rede de produtos",
+         "size":1,
+         "link":"",
+         "children":[
+            {
+               "name":"Oportunidades",
+               "children":[
+                  
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Vitrine",
+               "children":[
+                  
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Demandas",
+               "children":[
+                  
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Apoio",
+               "children":[
+                  {
+                     "name":"Apoio a técnico",
+                     "children":[
+                        {
+                           "name":"Sistema Brasileiro de Respostas Técnicas",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":"https://sbrt.ibict.br/"
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Informação",
+               "children":[
+                  {
+                     "name":"Normas e legislação",
+                     "children":[
+                        
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Quem somos?",
+               "children":[
+                  {
+                     "name":"Ministério da Ciência, Tecnologia e Inovações",
+                     "children":[
+                        {
+                           "name":"Secretaria de Articulação e Promoção da Ciência - SEAPC",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            }
+         ]
+      }
+   ]
+}
