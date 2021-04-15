@@ -10,6 +10,21 @@
                "name":"Quem somos?",
                "children":[
                   {
+                     "name":"Ministério da Ciência, Tecnologia e Inovações",
+                     "children":[
+                        {
+                           "name":"Secretaria de Estruturas Financeiras e de Projetos - SEFIP",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  },
+                  {
                      "name":"Órgãos e Agências de Fomento",
                      "children":[
                         {
@@ -83,21 +98,6 @@
                      "children":[
                         {
                            "name":"Pesquisadores",
-                           "children":[
-                              
-                           ],
-                           "size":1,
-                           "link":""
-                        }
-                     ],
-                     "size":1,
-                     "link":""
-                  },
-                  {
-                     "name":"Ministério da Ciência, Tecnologia e Inovações",
-                     "children":[
-                        {
-                           "name":"Secretaria de Estruturas Financeiras e de Projetos - SEFIP",
                            "children":[
                               
                            ],
@@ -189,6 +189,28 @@
          "size":1,
          "link":"",
          "children":[
+            {
+               "name":"Quem somos?",
+               "children":[
+                  {
+                     "name":"Ministério da Ciência, Tecnologia e Inovações",
+                     "children":[
+                        {
+                           "name":"Secretaria de Pesquisa e Formação Científica - SEPEF",
+                           "children":[
+                              
+                           ],
+                           "size":1,
+                           "link":""
+                        }
+                     ],
+                     "size":1,
+                     "link":""
+                  }
+               ],
+               "size":1,
+               "link":""
+            },
             {
                "name":"Pública",
                "children":[
@@ -630,7 +652,14 @@
                ],
                "size":1,
                "link":""
-            },
+            }
+         ]
+      },
+      {
+         "name":"Rede de Pesquisa",
+         "size":1,
+         "link":"",
+         "children":[
             {
                "name":"Quem somos?",
                "children":[
@@ -652,14 +681,7 @@
                ],
                "size":1,
                "link":""
-            }
-         ]
-      },
-      {
-         "name":"Rede de Pesquisa",
-         "size":1,
-         "link":"",
-         "children":[
+            },
             {
                "name":"Unidades de pesquisa",
                "children":[
@@ -845,7 +867,14 @@
                ],
                "size":1,
                "link":""
-            },
+            }
+         ]
+      },
+      {
+         "name":"Rede de Inovação",
+         "size":1,
+         "link":"",
+         "children":[
             {
                "name":"Quem somos?",
                "children":[
@@ -853,7 +882,7 @@
                      "name":"Ministério da Ciência, Tecnologia e Inovações",
                      "children":[
                         {
-                           "name":"Secretaria de Pesquisa e Formação Científica - SEPEF",
+                           "name":"Secretaria de Empreendedorismo e Inovação - SEMPI",
                            "children":[
                               
                            ],
@@ -867,14 +896,7 @@
                ],
                "size":1,
                "link":""
-            }
-         ]
-      },
-      {
-         "name":"Rede de Inovação",
-         "size":1,
-         "link":"",
-         "children":[
+            },
             {
                "name":"Redes",
                "children":[
@@ -974,7 +996,14 @@
                ],
                "size":1,
                "link":""
-            },
+            }
+         ]
+      },
+      {
+         "name":"Rede de produtos",
+         "size":1,
+         "link":"",
+         "children":[
             {
                "name":"Quem somos?",
                "children":[
@@ -982,7 +1011,7 @@
                      "name":"Ministério da Ciência, Tecnologia e Inovações",
                      "children":[
                         {
-                           "name":"Secretaria de Empreendedorismo e Inovação - SEMPI",
+                           "name":"Secretaria de Articulação e Promoção da Ciência - SEAPC",
                            "children":[
                               
                            ],
@@ -996,14 +1025,7 @@
                ],
                "size":1,
                "link":""
-            }
-         ]
-      },
-      {
-         "name":"Rede de produtos",
-         "size":1,
-         "link":"",
-         "children":[
+            },
             {
                "name":"Oportunidades",
                "children":[
@@ -1057,28 +1079,6 @@
                      "name":"Normas e legislação",
                      "children":[
                         
-                     ],
-                     "size":1,
-                     "link":""
-                  }
-               ],
-               "size":1,
-               "link":""
-            },
-            {
-               "name":"Quem somos?",
-               "children":[
-                  {
-                     "name":"Ministério da Ciência, Tecnologia e Inovações",
-                     "children":[
-                        {
-                           "name":"Secretaria de Articulação e Promoção da Ciência - SEAPC",
-                           "children":[
-                              
-                           ],
-                           "size":1,
-                           "link":""
-                        }
                      ],
                      "size":1,
                      "link":""
