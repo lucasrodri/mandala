@@ -147,6 +147,33 @@
                "link":""
             }
          ]
+      },
+      {
+         "name":"Startup",
+         "size":1,
+         "link":"",
+         "children":[
+            {
+               "name":"Capacitação",
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Informação",
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Financiamento",
+               "size":1,
+               "link":""
+            },
+            {
+               "name":"Divulgação",
+               "size":1,
+               "link":""
+            }
+         ]
       }
    ]
 }
