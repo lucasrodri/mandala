@@ -479,7 +479,30 @@
       "name": "Terceiro Setor",
       "size": 1,
       "link": "",
-      "children": []
+      "children": [
+        {
+          "name": "Quem Somos",
+          "size": 1,
+          "children": [
+            {
+              "name": "Natureza privada ",
+              "size": 1,
+              "link": ""
+            },
+            {
+              "name": "Natureza pública ",
+              "size": 1,
+              "link": ""
+            },
+            {
+              "name": "Organização sem fins lucrativos ",
+              "size": 1,
+              "link": ""
+            }
+          ],
+          "link": ""
+        }
+        ]
     }
   ]
 }
