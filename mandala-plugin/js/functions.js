@@ -25,11 +25,11 @@ const vetorHex =  ["#ff0000",
                "#0000ff",
               "#800080"];
 
-//const color = d3.scaleOrdinal(d3.schemePaired);
-const color = d3.scaleOrdinal(vetorHex);
+const color = d3.scaleOrdinal(d3.schemePaired);
+//const color = d3.scaleOrdinal(vetorHex);
 
-var url =
-  "https://raw.githubusercontent.com/lucasrodri/mandala/main/rcc123.json";
+//var url = "https://raw.githubusercontent.com/lucasrodri/mandala/main/rcc123.json";
+var url = "https://raw.githubusercontent.com/lucasrodri/mandala/main/user.json";
 
 fetch(url)
   .then((res) => res.json())
@@ -46,11 +46,24 @@ fetch(url)
         this.myChart.focusOnNode(d);
         if (d) {
           //if (!d.children) 
-          if (d.children.length == 0) {
+          //if (d.children.length == 0) {
+          if ((!d.children) && (d.link.length > 0)) {
             //console.log(d.link);
-            window.open(d.link);
+            //window.open(d.link); //Abrir em nova aba
+            window.open(d.link,"_self"); //Abrir na mesma aba
           }
         }
+        
+        currentNode = d;
+    
+        if ( currentNode === null ||
+            (currentNode && currentNode.__dataNode.depth === 0)
+        ) {
+            this.backButton.classList.add("d-none");
+        } else {
+            this.backButton.classList.remove("d-none");
+        }
+
       })
       .tooltipContent(
         (d, node) => `Quantidade de Termos: <i>${node.value}</i>`
