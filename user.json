@@ -12,27 +12,27 @@
             {
               "name": "Contratação de serviços",
               "size": 1,
-              "link": ""
+              "link": "http://rcc.ibict.br/como-fazer-contratacao-de-servicos/"
             },
             {
               "name": "Convênio",
               "size": 1,
-              "link": ""
+              "link": "http://rcc.ibict.br/como-fazer-convenios/"
             },
             {
               "name": "Memorando de entendimento",
               "size": 1,
-              "link": ""
+              "link": "http://rcc.ibict.br/como-fazer-memorando-de-entendimento/"
             },
             {
               "name": "Acordo de cooperação",
               "size": 1,
-              "link": ""
+              "link": "http://rcc.ibict.br/como-fazer-acordo-de-cooperacao/"
             },
             {
               "name": "Projeto de pesquisa",
               "size": 1,
-              "link": ""
+              "link": "http://rcc.ibict.br/como-fazer-projeto-de-pesquisa/"
             }
           ],
           "size": 1,
@@ -502,7 +502,7 @@
           ],
           "link": ""
         }
-        ]
+      ]
     }
   ]
 }
