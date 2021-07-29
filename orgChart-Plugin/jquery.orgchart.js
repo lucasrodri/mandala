@@ -66,6 +66,8 @@
 
         this.startEdit = function(id){
             var inputElement = $('<input class="org-input" type="text" value="'+nodes[id].data.name+'"/>');
+            var inputElementUrl = $('<input class="org-input" type="text" value="'+nodes[id].data.url+'"/>');
+
             $container.find('div[node-id='+id+'] h2').replaceWith(inputElement);
             var commitChange = function(){
                 var h2Element = $('<h2>'+nodes[id].data.name+'</h2>');
@@ -82,7 +84,10 @@
                     commitChange();
                 }
                 else{
+                    console.log("O valor:"+ inputElement.val())
+
                     nodes[id].data.name = inputElement.val();
+                    //nodes[id].data.url = inputElement.val();
                 }
             });
             inputElement.blur(function(event){
@@ -212,9 +217,13 @@
 
         this.formatNode = function(opts){
             var nameString = '',
-                descString = '';
+                descString = '',
+                urlString = '';
             if(typeof data.name !== 'undefined'){
                 nameString = '<h2>'+self.data.name+'</h2>';
+            }
+            if(typeof data.url !== 'undefined'){
+                urlString = '<h3>'+self.data.url+'</h3>';
             }
             if(typeof data.description !== 'undefined'){
                 descString = '<p>'+self.data.description+'</p>';
@@ -225,7 +234,7 @@
             else{
                 buttonsHtml = '';
             }
-            return "<div class='node' node-id='"+this.data.id+"'>"+nameString+descString+buttonsHtml+"</div>";
+            return "<div class='node' node-id='"+this.data.id+"'>"+nameString+urlString+descString+buttonsHtml+"</div>";
         }
     }
 

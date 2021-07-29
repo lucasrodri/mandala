@@ -4,14 +4,15 @@ div.orgChart {
   padding : 20px;
 }
 
-div.orgChart h2 {
+div.orgChart h2, div.orgChart h3 {
   margin : 0px;
   font-size : 16px;
   font-weight: normal;
   min-height: 20px;
+  overflow: hidden;
 }
 
-div.orgChart h2:hover {
+div.orgChart h2:hover, div.orgChart h3:hover {
   background: #fcfaca;
   cursor: text;
 }
@@ -53,8 +54,8 @@ div.orgChart div.node {
   border : 1px solid #e7e7e7;
   display : inline-block;
   padding : 5px;
-  width : 96px;
-  height : 60px;
+  width : 115px;
+  height : 80px;
   background: #ffffff; /* Old browsers */
   background: -moz-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fbfbfb)); /* Chrome,Safari4+ */
