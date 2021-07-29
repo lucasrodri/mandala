@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery orgChart Plugin Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+
+    <link href="jquery.orgchart.css" media="all" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    #orgChart{
+        width: auto;
+        height: auto;
+    }
+
+    #orgChartContainer{
+        width: auto;
+        height: 800px;
+        overflow: auto;
+        background: #eeeeee;
+    }
+
+</style>
+</head>
+<body>
+    <h1>Editor da Mandala:</h1>
+    
+    <button id='btn-mostrar'>Mostrar json</button>
+    <button id='btn-carregar'>Carregar dados novos</button>
+
+    <div id="orgChartContainer">
+        <div id="orgChart"></div>
+    </div>
+  <div id="consoleOutput"></div>
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="jquery.orgchart.js"></script>
+  <script type="text/javascript">
+    
+    // variáveis de teste para iniciar o chart
+    var testData = [
+    {id: 1, name: 'My Organization', url: 'http://teste.comdjkfhlskjfhldskjfhlsdkjfhsdlkjfhsdlkjfhsldkj', parent: 0},
+    {id: 2, name: 'CEO Office', url: 'http://teste.com', parent: 1},
+    {id: 3, name: 'Division 1', url: 'http://teste.com', parent: 1},
+    {id: 4, name: 'Division 2', url: 'http://teste.com', parent: 1},
+    {id: 6, name: 'Division 3', url: 'http://teste.com', parent: 1},
+    {id: 7, name: 'Division 4', url: 'http://teste.com', parent: 1},
+    {id: 8, name: 'Division 5', url: 'http://teste.com', parent: 1},
+    {id: 5, name: 'Sub Division', url: 'http://teste.com', parent: 3},
+    ];
+
+    $(function(){
+        
+        // função para criar um chart novo, recebe a variável de dados
+        function startChart(testData){
+            org_chart = $('#orgChart').orgChart({
+                data: testData,
+                showControls: true,
+                allowEdit: true
+            });
+            return org_chart;
+        }
+
+        // adiciona a função ao botão de mostrar 
+        $('#btn-mostrar').click(function(){
+            //console.log(JSON.stringify(org_chart.getData()));
+            alert(JSON.stringify(org_chart.getData()));
+        });
+
+        $('#btn-carregar').click(function(){
+            //crio novos dados diferentes
+            var novo = [
+                {id: 1, name: 'Azul', url: 'http://teste.comdjkfhlskjfhldskjfhlsdkjfhsdlkjfhsdlkjfhsldkj', parent: 0},
+                {id: 2, name: 'Amarelo', url: 'http://teste.com', parent: 1},
+                {id: 3, name: 'Verde', url: 'http://teste.com', parent: 1},
+                {id: 4, name: 'Vermelho', url: 'http://teste.com', parent: 1},
+                {id: 6, name: 'Cinza', url: 'http://teste.com', parent: 2},
+                {id: 7, name: 'Roxo', url: 'http://teste.com', parent: 3},
+                {id: 8, name: 'Rosa', url: 'http://teste.com', parent: 4},
+                {id: 5, name: 'Preto', url: 'http://teste.com', parent: 1},
+                ];
+
+            //instancio novamente a org_chart com esses valores (uso a mesma variável para manter o funcionamento do btn-mostrar)
+            org_chart = startChart(novo);
+        });
+
+        org_chart = startChart(testData);
+    });
+
+</script>
+</body>
+</html>
