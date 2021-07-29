@@ -36,6 +36,11 @@
                     self.startEdit(thisId);
                     e.stopPropagation();
                 });
+                $container.find('.node h3').click(function(e){
+                    var thisId = $(this).parent().attr('node-id');
+                    self.startEdit2(thisId);
+                    e.stopPropagation();
+                });
             }
 
             // add "add button" listener
@@ -66,8 +71,6 @@
 
         this.startEdit = function(id){
             var inputElement = $('<input class="org-input" type="text" value="'+nodes[id].data.name+'"/>');
-            var inputElementUrl = $('<input class="org-input" type="text" value="'+nodes[id].data.url+'"/>');
-
             $container.find('div[node-id='+id+'] h2').replaceWith(inputElement);
             var commitChange = function(){
                 var h2Element = $('<h2>'+nodes[id].data.name+'</h2>');
@@ -84,10 +87,33 @@
                     commitChange();
                 }
                 else{
-                    console.log("O valor:"+ inputElement.val())
-
                     nodes[id].data.name = inputElement.val();
-                    //nodes[id].data.url = inputElement.val();
+                }
+            });
+            inputElement.blur(function(event){
+                commitChange();
+            })
+        }
+
+        this.startEdit2 = function(id){
+            var inputElement = $('<input class="org-input" type="text" value="'+nodes[id].data.url+'"/>');
+            $container.find('div[node-id='+id+'] h3').replaceWith(inputElement);
+            var commitChange = function(){
+                var h2Element = $('<h3>'+nodes[id].data.url+'</h3>');
+                if(opts.allowEdit){
+                    h2Element.click(function(){
+                        self.startEdit2(id);
+                    })
+                }
+                inputElement.replaceWith(h2Element);
+            }  
+            inputElement.focus();
+            inputElement.keyup(function(event){
+                if(event.which == 13){
+                    commitChange();
+                }
+                else{
+                    nodes[id].data.url = inputElement.val();
                 }
             });
             inputElement.blur(function(event){
@@ -101,7 +127,7 @@
                 nextId++;
             }
 
-            self.addNode({id: nextId, name: '', parent: parentId});
+            self.addNode({id: nextId, name: 'nome', url: 'link', parent: parentId});
         }
 
         this.addNode = function(data){
