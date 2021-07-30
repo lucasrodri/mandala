@@ -11,7 +11,7 @@
         onAddNode: null,
         onDeleteNode: null,
         onClickNode: null,
-        newNodeText: 'Add Child'
+        newNodeText: 'Adicionar'
     };
 
     function OrgChart($container, opts){
@@ -70,7 +70,7 @@
         }
 
         this.startEdit = function(id){
-            var inputElement = $('<input class="org-input" type="text" value="'+nodes[id].data.name+'"/>');
+            var inputElement = $('<input class="org-input" placeholder="Insira um nome" type="text" value="'+nodes[id].data.name+'"/>');
             $container.find('div[node-id='+id+'] h2').replaceWith(inputElement);
             var commitChange = function(){
                 var h2Element = $('<h2>'+nodes[id].data.name+'</h2>');
@@ -96,7 +96,7 @@
         }
 
         this.startEdit2 = function(id){
-            var inputElement = $('<input class="org-input" type="text" value="'+nodes[id].data.url+'"/>');
+            var inputElement = $('<input class="org-input" placeholder="Insira um link" type="text" value="'+nodes[id].data.url+'"/>');
             $container.find('div[node-id='+id+'] h3').replaceWith(inputElement);
             var commitChange = function(){
                 var h2Element = $('<h3>'+nodes[id].data.url+'</h3>');
@@ -127,7 +127,7 @@
                 nextId++;
             }
 
-            self.addNode({id: nextId, name: 'nome', url: 'link', parent: parentId});
+            self.addNode({id: nextId, name: '', url: 'Insira um link', parent: parentId});
         }
 
         this.addNode = function(data){
