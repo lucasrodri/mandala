@@ -1,0 +1,13 @@
+[{
+    "id": "1",
+    "name": "",
+    "parent": ""
+  },
+  { "id": "2", "name": "Amarelo", "url": "http://teste.com", "value": 1, "parent": "1" },
+  { "id": "3", "name": "Verde", "url": "http://teste.com", "value": 1, "parent": "1" },
+  { "id": "4", "name": "Vermelho", "url": "http://teste.com", "value": 1, "parent": "1" },
+  { "id": "5", "name": "Preto", "url": "http://teste.com", "value": 1, "parent": "1" },
+  { "id": "6", "name": "Cinza", "url": "http://teste.com", "value": 1, "parent": "2" },
+  { "id": "7", "name": "Roxo", "url": "http://teste.com", "value": 1, "parent": "3" },
+  { "id": "8", "name": "Rosa", "url": "http://teste.com", "value": 1, "parent": "4" }
+]
