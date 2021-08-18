@@ -43,6 +43,7 @@
                 });
                 $container.find('.node input[type="color"]').click(function(e){
                     var thisId = $(this).parent().attr('node-id');
+                    console.log("Comecei a editar input color de numero " + thisId);
                     self.startEdit3(thisId);
                     e.stopPropagation();
                 });
@@ -127,12 +128,11 @@
         }
 
         this.startEdit3 = function(id){
-            var inputElement = $('<input type="color" value="'+nodes[id].data.color+'"/>');
+            //console.log("estou startEdit3");
+            var inputElement = $container.find('div[node-id='+id+'] input[type="color"]');//.replaceWith(inputElement);
             
-            console.log("estou startEdit3");
-
             var commitChange = function(){
-                //'<input type="color" value="'+self.data.color+'">'
+                //console.log("Chamei commitChange");
                 var h2Element = $('<input type="color" value='+nodes[id].data.color+'>');
                 if(opts.allowEdit){
                     h2Element.click(function(){
@@ -141,23 +141,10 @@
                 }
                 inputElement.replaceWith(h2Element);
             }  
-            inputElement.focus();
-            inputElement.keyup(function(event){
-                console.log("estou no keyup");
-                if(event.which == 13){
-                    commitChange();
-                }
-                else{
-                    nodes[id].data.color = inputElement.val();
-                }
-            });
+            // no caso do input type color, apenas o blur funciona
             inputElement.blur(function(event){
-                console.log("estou no blur");
-                commitChange();
-            });
-            
-            inputElement.change(function(event){
-                console.log("estou no input");
+                //console.log("estou no blur");
+                nodes[id].data.color = inputElement.val();
                 commitChange();
             });
         }
@@ -167,8 +154,12 @@
             while(nextId in nodes){
                 nextId++;
             }
-
-            self.addNode({id: nextId, name: '', url: 'Insira um link', parent: parentId});
+            //Checar quando crio novo node para acrescentar color nos filhos da raiz
+            if(parentId == 1) {
+                self.addNode({id: nextId, name: '', url: 'Insira um link', color: '#FFFFFF', parent: parentId});
+            } else {
+                self.addNode({id: nextId, name: '', url: 'Insira um link', parent: parentId});
+            }
         }
 
         this.addNode = function(data){
@@ -192,6 +183,11 @@
         this.getData = function(){
             var outData = [];
             for(var i in nodes){
+                // nodes[i].data é um dicionário, basta acrescentar um array[key]=value 
+                // inclusão de value para funcionamento da mandala highcharts
+                nodes[i].data['value'] = 1;
+                
+                console.log(nodes[i].data);
                 outData.push(nodes[i].data);
             }
             return outData;
@@ -302,7 +298,7 @@
                     descString = '<p>'+self.data.description+'</p>';
                 }
                 if(typeof data.color !== 'undefined'){
-                    colorString = '<input type="color" value="'+self.data.color+'" onchange="salvarColor()">';
+                    colorString = '<input type="color" value="'+self.data.color+'">';
                 }
             }
 
@@ -317,7 +313,3 @@
     }
 
 })(jQuery);
-
-function salvarColor(){
-    console.log("salvarColor chamei");
-}

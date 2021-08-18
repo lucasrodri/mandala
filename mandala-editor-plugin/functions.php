@@ -143,7 +143,7 @@ function salvar_txt_mandala() {
 	
 	$json_content_clean = html_entity_decode( stripslashes ($json_content ) );
 	$json_content_clean = str_replace("},{", "},\n{", $json_content_clean); //incluir quebra de linha
-	$json_content_clean = str_replace(',"parent"', ',"value":1,"parent"', $json_content_clean); //incluir value
+	//$json_content_clean = str_replace(',"parent"', ',"value":1,"parent"', $json_content_clean); //incluir value
 
 	fwrite($myfile, $json_content_clean);
 	fclose($myfile);
