@@ -120,7 +120,7 @@ $(function(){
        
         org_chart = startChart(dataJS);
 
-        /*var elemento = $('<span class="org-chart">Raiz da Mandala</span>');
+        /*var elemento = $('<span class="org-chart">RCC</span>');
         $('#editor-1').find('h2').replaceWith(elemento);
         $('#editor-1').find('h3').remove();*/
     });

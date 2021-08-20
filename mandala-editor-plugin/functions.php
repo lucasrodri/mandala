@@ -1,9 +1,9 @@
 <?php
 /** 
- * Plugin Name: Mandala Plugin -- Teste Rebeca
+ * Plugin Name: Mandala Plugin Ibict
  * Plugin URI: http://rcc.ibict.br/
- * Description: Adiciona funcionalides ao tema desenvolvido
- * Version: 1.0 
+ * Description: Adiciona funcionalidades ao tema desenvolvido
+ * Version: 2.0 
  * Author: Ibict
  * Author URI: http://rcc.ibict.br/
 */

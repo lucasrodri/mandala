@@ -147,6 +147,22 @@
                 nodes[id].data.color = inputElement.val();
                 commitChange();
             });
+            inputElement.focus(function(event){
+                if(event.which == 13){
+                    console.log("Focus: Dei enter!!!")
+                }
+                else{
+                    console.log("Focus Cliquei!!!")
+                }
+            });
+            inputElement.keyup(function(event){
+                if(event.which == 13){
+                    console.log("Dei enter!!!")
+                }
+                else{
+                    console.log("Cliquei!!!")
+                }
+            });
         }
 
         this.newNode = function(parentId){
@@ -285,7 +301,7 @@
                 colorString = '';
 
             // If para não permitir a edição do Raiz
-            if(data.name == "Raiz da Mandala"){
+            if(data.name == "RCC"){
                 nameString = '<span>'+self.data.name+'</span>';
             } else {
                 if(typeof data.name !== 'undefined'){

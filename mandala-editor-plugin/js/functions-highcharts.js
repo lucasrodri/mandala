@@ -10,7 +10,8 @@ var dataJS = [
 ];
 
 //http://localhost\devsite-2021\wp-content\plugins\mandala-plugin//newfile.txt
-fetch('\\devsite-2021\\wp-content\\plugins\\mandala-plugin\\newfile.txt',{mode: 'no-cors'})
+//fetch('\\devsite-2021\\wp-content\\plugins\\mandala-plugin\\newfile.txt',{mode: 'no-cors'})
+fetch('/wp-content/plugins/mandala-editor-plugin/newfile.txt',{mode: 'no-cors'})
   .then((res) => res.text())
   .then((data) => {
     dataJS = JSON.parse(data);
@@ -79,12 +80,12 @@ function chamaHighChart(data){
                 
                 if(!clickedNode.children || clickedNode.children.length == 0 || clickedNode.children === []){
                   //if there are no children to the clicked node, we've hit the button of the sunburst chart
-                  console.log('target acquired')
+                  //console.log('target acquired')
                   
                   if (this.options.url !== undefined) {
-                    console.log("Cliquei aqui!")
+                    //console.log("Cliquei aqui!")
                     //console.log(this.children)
-                    //window.open(this.options.url)
+                    window.open(this.options.url);
                     //window.location.href = this.options.url;
                     //location.href = this.options.url;
                   }
