@@ -113,7 +113,8 @@ $(function(){
 
     // Assim ele pega os dados do arquivo que ele mesmo criou
     //http://localhost\devsite-2021\wp-content\plugins\mandala-plugin//newfile.txt
-    fetch('\\devsite-2021\\wp-content\\plugins\\mandala-plugin\\newfile.txt',{mode: 'no-cors'})
+    //fetch('\\devsite-2021\\wp-content\\plugins\\mandala-plugin\\newfile.txt',{mode: 'no-cors'})
+    fetch('/wp-content/plugins/mandala-editor-plugin/newfile.txt',{mode: 'no-cors'})
       .then((res) => res.text())
       .then((data) => {
         dataJS = JSON.parse(data);

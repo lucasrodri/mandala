@@ -1,4 +1,4 @@
-[{"id":"1","name":"Raiz da Mandala","url":"http://teste.com","parent":"0","value":1},
+[{"id":"1","name":"RCC","url":"http://teste.com","parent":"0","value":1},
 {"id":"2","name":"Empresa","url":"Insira um link","color":"#fff773","parent":"1","value":1},
 {"id":"3","name":"Governo","url":"Insira um link","color":"#d6e982","parent":"1","value":1},
 {"id":"4","name":"Startup","url":"Insira um link","color":"#a0d297","parent":"1","value":1},

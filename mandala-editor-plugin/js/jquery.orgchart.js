@@ -147,22 +147,6 @@
                 nodes[id].data.color = inputElement.val();
                 commitChange();
             });
-            inputElement.focus(function(event){
-                if(event.which == 13){
-                    console.log("Focus: Dei enter!!!")
-                }
-                else{
-                    console.log("Focus Cliquei!!!")
-                }
-            });
-            inputElement.keyup(function(event){
-                if(event.which == 13){
-                    console.log("Dei enter!!!")
-                }
-                else{
-                    console.log("Cliquei!!!")
-                }
-            });
         }
 
         this.newNode = function(parentId){
