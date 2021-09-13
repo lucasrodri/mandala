@@ -68,7 +68,7 @@ function mandala_menu() {
 	add_menu_page(
 		__( 'Editor Mandala', 'mandala-plugin' ),
 		__( 'Mandala', 'mandala-plugin' ),
-		'manage_options',
+		'edit_posts',//'manage_options',
 		'mandala-editor',
 		'mandala_admin_page'
 		//'dashicons-schedule',
@@ -81,10 +81,11 @@ function mandala_admin_page() {
 	?>
 	<h1>Editor da Mandala:</h1>
 
-	<button id='btn-mostrar'>Mostrar json</button>
+	<!--button id='btn-mostrar'>Mostrar json</button>
 	<button id='btn-carregar'>Carregar dados novos</button>
-	<button id='btn-download'>Baixar json</button>
-	<button id='btn-save'>Salvar json com php</button>
+	<button id='btn-download'>Baixar json</button-->
+
+	<button id='btn-save'>Salvar mandala</button>
 
 	<div id="orgChartContainer">
 		<div id="orgChart"></div>
@@ -150,6 +151,19 @@ function salvar_txt_mandala() {
 
 	//resposta para o ajax
 	echo $file_name;
+	
+	backup_txt_mandala($file_name);
 
 	wp_die(); // this is required to terminate immediately and return a proper response
+}
+
+
+function backup_txt_mandala($file_name){
+	$current_user = wp_get_current_user();
+	$user_login = esc_html( $current_user->user_login );
+	$timestamp = str_replace(" ", "_", current_time('mysql'));
+	
+	$novo_nome = MANDALA_PATH . 'backup/dados-mandala_' . $user_login . '_' . $timestamp . '.txt';
+	
+	copy($file_name, $novo_nome);
 }
