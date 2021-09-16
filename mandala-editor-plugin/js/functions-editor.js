@@ -1,21 +1,3 @@
-var testDataTeste = [
-{id: 1, name: 'My Organization', url: 'http://teste.comdjkfhlskjfhldskjfhlsdkjfhsdlkjfhsdlkjfhsldkj', parent: 0},
-{id: 2, name: 'CEO Office', url: 'http://teste.com', parent: 1},
-{id: 3, name: 'Division 1', url: 'http://teste.com', parent: 1},
-{id: 4, name: 'Division 2', url: 'http://teste.com', parent: 1},
-{id: 6, name: 'Division 3', url: 'http://teste.com', parent: 1},
-{id: 7, name: 'Division 4', url: 'http://teste.com', parent: 1},
-{id: 8, name: 'Division 5', url: 'http://teste.com', parent: 1},
-{id: 5, name: 'Sub Division', url: 'http://teste.com', parent: 3},
-];
-
-//console.log({testData});
-
-/* $(function(){
-$('#orgChart').replaceWith("<p> TESTE </p>");
-}); */
-//console.log("mal feito feito");
-
 // Precisa do $function pq está em outra página
 $(function(){
     // função para criar um chart novo, recebe a variável de dados
@@ -67,34 +49,25 @@ $(function(){
         document.body.removeChild(a);
     });
 
+    // Função para mostrar todos
+    $('#btn-show-all').click(function(){
+        org_chart.showAllChildren();
+    });
+
+    // Função para fechar todos
+    $('#btn-hide-all').click(function(){
+        org_chart.hideAllChildren();
+    });
 
     // Função para salvar o conteúdo do json
     $('#btn-save').click(function(){
         var json_content = JSON.stringify(org_chart.getData());
-        //console.log("original")
-        //console.log(json_content);
-        
-        //console.log("troca id")
+
         //salvava "id":1, mas preciso que seja "id":"1"
         json_content = json_content.replace(/"id":(\d+)/g,'"id":"$1"');
-        //console.log(json_content);
-        
-        //console.log("troca conteudo")
+
         // mesma coisa para parent
         json_content = json_content.replace(/"parent":(\d+)/g,'"parent":"$1"');
-        //console.log(json_content);
-
-        /*
-        var data = {
-            'action': 'my_action',
-            'whatever': 1234
-        };
-
-        // since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
-        $.post(ajaxurl, data, function(response) {
-            alert('Got this from the server: ' + response);
-        });
-        */
 
         //https://codex.wordpress.org/AJAX_in_Plugins
         var data = {
@@ -104,7 +77,7 @@ $(function(){
 
         // since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
         $.post(ajaxurl, data, function(response) {
-            alert('Arquivo salvo em: ' + response);
+            alert(response);
         });
 
     });
@@ -112,17 +85,13 @@ $(function(){
     //org_chart = startChart(testData);
 
     // Assim ele pega os dados do arquivo que ele mesmo criou
-    //http://localhost\devsite-2021\wp-content\plugins\mandala-plugin//newfile.txt
-    //fetch('\\devsite-2021\\wp-content\\plugins\\mandala-plugin\\newfile.txt',{mode: 'no-cors'})
-    fetch('/wp-content/plugins/mandala-editor-plugin/newfile.txt',{mode: 'no-cors'})
+    //fetch('\\devsite-2021\\wp-content\\plugins\\mandala-plugin\\dados-mandala.txt',{mode: 'no-cors'})
+    fetch('/wp-content/plugins/mandala-editor-plugin/dados-mandala.txt',{mode: 'no-cors'})
       .then((res) => res.text())
       .then((data) => {
         dataJS = JSON.parse(data);
        
         org_chart = startChart(dataJS);
 
-        /*var elemento = $('<span class="org-chart">RCC</span>');
-        $('#editor-1').find('h2').replaceWith(elemento);
-        $('#editor-1').find('h3').remove();*/
     });
 });

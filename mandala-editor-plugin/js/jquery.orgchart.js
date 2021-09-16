@@ -43,7 +43,7 @@
                 });
                 $container.find('.node input[type="color"]').click(function(e){
                     var thisId = $(this).parent().attr('node-id');
-                    console.log("Comecei a editar input color de numero " + thisId);
+                    //console.log("Comecei a editar input color de numero " + thisId);
                     self.startEdit3(thisId);
                     e.stopPropagation();
                 });
@@ -64,14 +64,78 @@
 
             $container.find('.org-del-button').click(function(e){
                 var thisId = $(this).parent().attr('node-id');
-
-                if(self.opts.onDeleteNode !== null){
-                    self.opts.onDeleteNode(nodes[thisId]);
-                }
-                else{
-                    self.deleteNode(thisId);
+                
+                if(confirm('Tem certeza que quer deletar esse nó? Os filhos também serão deletados.')){
+                    if(self.opts.onDeleteNode !== null){
+                        self.opts.onDeleteNode(nodes[thisId]);
+                    }
+                    else{
+                        self.deleteNode(thisId);
+                    }
                 }
                 e.stopPropagation();
+            });
+
+            // add "show button" listener
+            $container.find('.org-show-button').click(function(e){
+                var thisId = $(this).parent().attr('node-id');
+
+                nodes[thisId].data.showChildren = 'true';
+                
+                self.draw();
+
+                e.stopPropagation();
+            });
+
+            // add "hide button" listener
+            $container.find('.org-hide-button').click(function(e){
+                var thisId = $(this).parent().attr('node-id');
+
+                nodes[thisId].data.showChildren = 'false';
+
+                // função para setar todas as children com showChildren = 'false'
+                self.showChildrenFalse(thisId);
+
+                self.draw();
+
+                e.stopPropagation();
+            });
+        }
+        
+        this.showAllChildren = function(id=1){
+
+            $.each( nodes[id].children, function( i, value ) {
+                    
+                    nodes[value.data.id].data.showChildren = 'true';
+                    
+                    // recursivamente chama os filhos
+                    self.showChildrenTrue(value.data.id);
+            });
+
+            self.draw();
+        }
+
+        this.showChildrenTrue = function(id){
+
+            // loop para passar por todas as children
+            $.each( nodes[id].children, function( i, value ) {
+                    
+                    nodes[value.data.id].data.showChildren = 'true';
+                    
+                    // recursivamente chama os filhos
+                    self.showChildrenTrue(value.data.id);
+            });
+        }
+
+        this.showChildrenFalse = function(id){
+
+            // loop para passar por todas as children
+            $.each( nodes[id].children, function( i, value ) {
+                    
+                    nodes[value.data.id].data.showChildren = 'false';
+                    
+                    // recursivamente chama os filhos
+                    self.showChildrenFalse(value.data.id);
             });
         }
 
@@ -102,7 +166,13 @@
         }
 
         this.startEdit2 = function(id){
-            var inputElement = $('<input class="org-input" placeholder="Insira um link" type="text" value="'+nodes[id].data.url+'"/>');
+
+            if(nodes[id].data.url == 'Insira um link') {
+                var inputElement = $('<input class="org-input" placeholder="Insira um link" type="text" value=""/>');
+            } else {
+                var inputElement = $('<input class="org-input" placeholder="Insira um link" type="text" value="'+nodes[id].data.url+'"/>');
+            }
+            
             $container.find('div[node-id='+id+'] h3').replaceWith(inputElement);
             var commitChange = function(){
                 var h2Element = $('<h3>'+nodes[id].data.url+'</h3>');
@@ -187,7 +257,7 @@
                 // inclusão de value para funcionamento da mandala highcharts
                 nodes[i].data['value'] = 1;
                 
-                console.log(nodes[i].data);
+                //console.log(nodes[i].data);
                 outData.push(nodes[i].data);
             }
             return outData;
@@ -240,7 +310,7 @@
             var nodeColspan = childLength>0?2*childLength:2;
             mainTable += "<tr><td colspan='"+nodeColspan+"'>"+self.formatNode(opts)+"</td></tr>";
 
-            if(childLength > 0){
+            if((self.data.showChildren == 'true') && (childLength > 0)){
                 var downLineTable = "<table cellpadding='0' cellspacing='0' border='0'><tr class='lines x'><td class='line left half'></td><td class='line right half'></td></table>";
                 mainTable += "<tr class='lines'><td colspan='"+childLength*2+"'>"+downLineTable+'</td></tr>';
 
@@ -303,7 +373,18 @@
             }
 
             if(opts.showControls){
-                var buttonsHtml = "<div class='org-add-button'>"+opts.newNodeText+"</div><div class='org-del-button'></div>";
+                
+                if(data.showChildren == "true"){
+                    var buttonsHtml =  "<div id='btn-hide-"+this.data.id+"' class='org-hide-button'></div>\
+                                        <div id='btn-show-"+this.data.id+"' class='org-show-button' style='display:none;'></div>\
+                                        <div class='org-add-button'>"+opts.newNodeText+"</div>\
+                                        <div class='org-del-button'>Excluir</div>";
+                } else {
+                    var buttonsHtml =  "<div id='btn-hide-"+this.data.id+"' class='org-hide-button' style='display:none;'></div>\
+                                        <div id='btn-show-"+this.data.id+"' class='org-show-button'></div>\
+                                        <div class='org-add-button' style='display:none;'>"+opts.newNodeText+"</div>\
+                                        <div class='org-del-button' style='display:none;'>Excluir</div>";
+                }
             }
             else{
                 buttonsHtml = '';

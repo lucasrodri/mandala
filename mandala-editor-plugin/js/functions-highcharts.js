@@ -9,9 +9,8 @@ var dataJS = [
   { id: "8", name: "Rosa", url: "http://teste.com", value: 1, parent: "4" }
 ];
 
-//http://localhost\devsite-2021\wp-content\plugins\mandala-plugin//newfile.txt
-//fetch('\\devsite-2021\\wp-content\\plugins\\mandala-plugin\\newfile.txt',{mode: 'no-cors'})
-fetch('/wp-content/plugins/mandala-editor-plugin/newfile.txt',{mode: 'no-cors'})
+//fetch('\\devsite-2021\\wp-content\\plugins\\mandala-plugin\\dados-mandala.txt',{mode: 'no-cors'})
+fetch('/wp-content/plugins/mandala-editor-plugin/dados-mandala.txt',{mode: 'no-cors'})
   .then((res) => res.text())
   .then((data) => {
     dataJS = JSON.parse(data);
@@ -111,7 +110,8 @@ function chamaHighChart(data){
                 property: 'outerArcLength',
                 operator: '>',
                 value: 64
-              }
+              }//,
+              //style: {color:'white'}
             },
             colorVariation: {
               key: 'brightness',

@@ -86,8 +86,10 @@ function mandala_admin_page() {
 	<button id='btn-download'>Baixar json</button-->
 
 	<button id='btn-save'>Salvar mandala</button>
+	<button id='btn-show-all'>Mostrar todos os nós</button>
+	<button id='btn-hide-all'>Esconder todos os nós</button>
 
-	<div id="orgChartContainer">
+	<div id="orgChartContainer" style="overflow: auto;">
 		<div id="orgChart"></div>
 	</div>
 	<div id="consoleOutput"></div>
@@ -139,7 +141,7 @@ function salvar_txt_mandala() {
 	// Pega variável do ajax
 	$json_content = $_POST['json_content'];
 
-	$file_name = MANDALA_PATH . "newfile.txt"; 
+	$file_name = MANDALA_PATH . "dados-mandala.txt"; 
 	$myfile = fopen($file_name, "w") or die("Unable to open file!");
 	
 	$json_content_clean = html_entity_decode( stripslashes ($json_content ) );
@@ -150,20 +152,21 @@ function salvar_txt_mandala() {
 	fclose($myfile);
 
 	//resposta para o ajax
-	echo $file_name;
+	//echo $file_name;
+	echo 'Dados salvos na mandala!';
 	
 	backup_txt_mandala($file_name);
 
 	wp_die(); // this is required to terminate immediately and return a proper response
 }
 
-
+/*Função para backup dos dados da mandala*/
 function backup_txt_mandala($file_name){
 	$current_user = wp_get_current_user();
 	$user_login = esc_html( $current_user->user_login );
 	$timestamp = str_replace(" ", "_", current_time('mysql'));
 	
-	$novo_nome = MANDALA_PATH . 'backup/dados-mandala_' . $user_login . '_' . $timestamp . '.txt';
+	$novo_nome = MANDALA_PATH . 'backup/'. $timestamp .'_dados-mandala_' . $user_login . '.txt';
 	
 	copy($file_name, $novo_nome);
 }
