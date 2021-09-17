@@ -37,11 +37,14 @@ function mandalaScripts(){
 
 	wp_register_style( 'css_mandala_hc', MANDALA_CSS_URL . 'style-highcharts.css', false, $ver );
 	wp_enqueue_style ( 'css_mandala_hc' );
+
+	wp_register_style( 'css_breadcrumb', MANDALA_CSS_URL . 'style-breadcrumb.css', false, $ver );
+	wp_enqueue_style ( 'css_breadcrumb' );
 }
 add_action('wp_enqueue_scripts', 'mandalaScripts');
 
-/** Função de exemplo que recebe um texto e o torna capitalizado
-	Ex: [shortcode_destaque texto="Lorem Ipsum"] 
+/** Função que renderiza a mandala Sunburst
+	Ex: [shortcode_mandala] 
 **/
 function mandalaFunction($params) {
 	$html = "<div id='chart'></div>";
@@ -49,8 +52,8 @@ function mandalaFunction($params) {
 }
 add_shortcode('shortcode_mandala', 'mandalaFunction');
 
-/** Função de exemplo que recebe um texto e o torna capitalizado
-	Ex: [shortcode_destaque texto="Lorem Ipsum"] 
+/** Função que renderiza a mandala HighCharts
+	Ex: [shortcode_mandala_hc"] 
 **/
 function mandalaHighCharts($params) {
 	$html = '<div class="highcharts-figure">
@@ -170,3 +173,42 @@ function backup_txt_mandala($file_name){
 	
 	copy($file_name, $novo_nome);
 }
+
+
+/** 
+	Ex: [shortcode_teste texto="Lorem Ipsum"] 
+**/
+function titulo() {
+	$titulo = get_the_title();
+	$html = '<div>
+  				<div>'. $titulo .'</div>
+			</div>';
+	return $html;
+}
+add_shortcode('shortcode_teste', 'titulo');
+
+/** Função para breadcrumb
+	Ex: [shortcode_breadcrumb"] 
+**/
+function get_breadcrumb() {
+	echo '<div class="breadcrumb">';
+    echo '<a href="'.home_url().'" rel="nofollow"><img src="/wp-content/uploads/2021/09/text.png" alt="Home"></a>';
+    if (is_category() || is_single()) {
+        echo '&nbsp;&nbsp;<img src="/wp-content/uploads/2021/09/seta.png">&nbsp;&nbsp;';
+        the_category(' &bull; ');
+            if (is_single()) {
+                echo ' &nbsp;&nbsp;<img src="/wp-content/uploads/2021/09/seta.png">&nbsp;&nbsp; ';
+                the_title();
+            }
+    } elseif (is_page()) {
+        echo '&nbsp;&nbsp;<img src="/wp-content/uploads/2021/09/seta.png">&nbsp;&nbsp;';
+        echo the_title();
+    } elseif (is_search()) {
+        echo '&nbsp;&nbsp;<img src="/wp-content/uploads/2021/09/seta.png">&nbsp;&nbsp;Resultados de busca por ... ';
+        echo '"<em>';
+        echo the_search_query();
+        echo '</em>"';
+    }
+    echo '</div>';
+}
+add_shortcode('shortcode_breadcrumb', 'get_breadcrumb');

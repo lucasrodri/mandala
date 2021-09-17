@@ -115,6 +115,19 @@
             self.draw();
         }
 
+        this.hideAllChildren = function(id=1){
+
+            $.each( nodes[id].children, function( i, value ) {
+                    
+                    nodes[value.data.id].data.showChildren = 'false';
+                    
+                    // recursivamente chama os filhos
+                    self.showChildrenFalse(value.data.id);
+            });
+
+            self.draw();
+        }
+
         this.showChildrenTrue = function(id){
 
             // loop para passar por todas as children
