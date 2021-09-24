@@ -76,8 +76,51 @@ $(function(){
         };
 
         // since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
-        $.post(ajaxurl, data, function(response) {
+        /*$.post(ajaxurl, data, function(response) {
             alert(response);
+        }); */
+
+        // Variáveis para o jquery
+        var loaderContainer, loader;
+        var filterVal = 'blur(5px)';
+
+        $.ajax({
+            type: "POST",
+            url: ajaxurl,
+            data: data,
+            beforeSend: function () {
+                loaderContainer = $('<span/>', {
+                    'class': 'loader-image-container'
+                }).insertBefore($('#btn-save'));
+
+                loader = $('<img/>', {
+                    src: 'images/loading.gif',
+                    'class': 'loader-image'
+                }).appendTo(loaderContainer);
+
+                //aplicar filtro
+                $('#orgChart')
+                    .css('filter', filterVal)
+                    .css('webkitFilter', filterVal)
+                    .css('mozFilter', filterVal)
+                    .css('oFilter', filterVal)
+                    .css('msFilter', filterVal);
+            },
+            success: function(response) {
+                filterVal = 'blur(0px)';
+                
+                alert(response);
+
+                //remover filtro
+                $('#orgChart')
+                    .css('filter', filterVal)
+                    .css('webkitFilter', filterVal)
+                    .css('mozFilter', filterVal)
+                    .css('oFilter', filterVal)
+                    .css('msFilter', filterVal);
+                
+                loaderContainer.remove();
+            }
         });
 
     });

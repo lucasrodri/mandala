@@ -28,12 +28,14 @@ function mandalaScripts(){
 	wp_enqueue_style ( 'css_mandala' );
 
 	//mandala highcharts
-	wp_enqueue_script( 'js_mandala_hc', MANDALA_JS_URL . 'functions-highcharts.js' , array('js_hc', 'js_hc_sunburst', 'js_hc_exporting', 'js_hc_export_data', 'js_hc_accessibility'), false, $ver );
-	wp_enqueue_script( 'js_hc', 'https://code.highcharts.com/highcharts.js' , array(), $ver );
-	wp_enqueue_script( 'js_hc_sunburst', 'https://code.highcharts.com/modules/sunburst.js' , array(), $ver );
-	wp_enqueue_script( 'js_hc_exporting', 'https://code.highcharts.com/modules/exporting.js' , array(), $ver );
-	wp_enqueue_script( 'js_hc_export_data', 'https://code.highcharts.com/modules/export-data.js' , array(), $ver );
-	wp_enqueue_script( 'js_hc_accessibility', 'https://code.highcharts.com/modules/accessibility.js' , array(), $ver );
+	if (is_front_page()) {
+		wp_enqueue_script( 'js_mandala_hc', MANDALA_JS_URL . 'functions-highcharts.js' , array('js_hc', 'js_hc_sunburst', 'js_hc_exporting', 'js_hc_export_data', 'js_hc_accessibility'), false, $ver );
+		wp_enqueue_script( 'js_hc', 'https://code.highcharts.com/highcharts.js' , array(), $ver );
+		wp_enqueue_script( 'js_hc_sunburst', 'https://code.highcharts.com/modules/sunburst.js' , array(), $ver );
+		wp_enqueue_script( 'js_hc_exporting', 'https://code.highcharts.com/modules/exporting.js' , array(), $ver );
+		wp_enqueue_script( 'js_hc_export_data', 'https://code.highcharts.com/modules/export-data.js' , array(), $ver );
+		wp_enqueue_script( 'js_hc_accessibility', 'https://code.highcharts.com/modules/accessibility.js' , array(), $ver );
+	}
 
 	wp_register_style( 'css_mandala_hc', MANDALA_CSS_URL . 'style-highcharts.css', false, $ver );
 	wp_enqueue_style ( 'css_mandala_hc' );
@@ -211,4 +213,5 @@ function get_breadcrumb() {
     }
     echo '</div>';
 }
-add_shortcode('shortcode_breadcrumb', 'get_breadcrumb');
+
+//add_shortcode('shortcode_breadcrumb', 'dsgov_breadcrumb'); //mudei para o tema
