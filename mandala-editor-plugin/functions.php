@@ -12,6 +12,7 @@
 define('MANDALA_PATH', plugin_dir_path(__FILE__) . '/');
 define('MANDALA_JS_PATH', plugin_dir_path(__FILE__) . 'js/');
 define('MANDALA_JS_URL', plugin_dir_url(__FILE__) . 'js/');
+define('MANDALA_JS_ORG_URL', plugin_dir_url(__FILE__) . 'js-original/');
 define('MANDALA_CSS_PATH', plugin_dir_path(__FILE__) . 'css/');
 define('MANDALA_CSS_URL', plugin_dir_url(__FILE__) . 'css/');
 
@@ -20,21 +21,21 @@ function mandalaScripts(){
 	$ver = time();
 	
 	// mandala sunburst
-	wp_enqueue_script( 'js_mandala', MANDALA_JS_URL . 'functions-sunburst.js' , array('jquery', 'js_mandala_d3', 'js_mandala_sunburst'), $ver );
+	/*wp_enqueue_script( 'js_mandala', MANDALA_JS_URL . 'functions-sunburst.js' , array('jquery', 'js_mandala_d3', 'js_mandala_sunburst'), $ver );
 	wp_enqueue_script( 'js_mandala_d3', 'https://unpkg.com/d3@6.6.1/dist/d3.min.js' , array('jquery'), $ver );
 	wp_enqueue_script( 'js_mandala_sunburst', 'https://unpkg.com/sunburst-chart@1.11.2/dist/sunburst-chart.min.js' , array('jquery'), $ver );
 
 	wp_register_style( 'css_mandala', MANDALA_CSS_URL . 'style-sunburst.css', false, $ver );
-	wp_enqueue_style ( 'css_mandala' );
+	wp_enqueue_style ( 'css_mandala' );*/
 
 	//mandala highcharts
 	if (is_front_page()) {
 		wp_enqueue_script( 'js_mandala_hc', MANDALA_JS_URL . 'functions-highcharts.js' , array('js_hc', 'js_hc_sunburst', 'js_hc_exporting', 'js_hc_export_data', 'js_hc_accessibility'), false, $ver );
-		wp_enqueue_script( 'js_hc', 'https://code.highcharts.com/highcharts.js' , array(), $ver );
-		wp_enqueue_script( 'js_hc_sunburst', 'https://code.highcharts.com/modules/sunburst.js' , array(), $ver );
-		wp_enqueue_script( 'js_hc_exporting', 'https://code.highcharts.com/modules/exporting.js' , array(), $ver );
-		wp_enqueue_script( 'js_hc_export_data', 'https://code.highcharts.com/modules/export-data.js' , array(), $ver );
-		wp_enqueue_script( 'js_hc_accessibility', 'https://code.highcharts.com/modules/accessibility.js' , array(), $ver );
+		wp_enqueue_script( 'js_hc', MANDALA_JS_ORG_URL . 'highcharts.js' , array(), $ver );
+		wp_enqueue_script( 'js_hc_sunburst', MANDALA_JS_ORG_URL . 'sunburst.js' , array(), $ver );
+		wp_enqueue_script( 'js_hc_exporting', MANDALA_JS_ORG_URL . 'exporting.js' , array(), $ver );
+		wp_enqueue_script( 'js_hc_export_data', MANDALA_JS_ORG_URL . 'export-data.js' , array(), $ver );
+		wp_enqueue_script( 'js_hc_accessibility', MANDALA_JS_ORG_URL . 'accessibility.js' , array(), $ver );
 	}
 
 	wp_register_style( 'css_mandala_hc', MANDALA_CSS_URL . 'style-highcharts.css', false, $ver );

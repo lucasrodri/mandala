@@ -114,8 +114,8 @@
 
             self.draw();
         }
-
-        this.hideAllChildren = function(id=1){
+		
+		this.hideAllChildren = function(id=1){
 
             $.each( nodes[id].children, function( i, value ) {
                     
