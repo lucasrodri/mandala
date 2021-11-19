@@ -255,9 +255,30 @@
         }
 
         this.deleteNode = function(id){
-            for(var i=0;i<nodes[id].children.length;i++){
+            /*
+            console.log('---Chamando o delete pelo ' + id);
+            console.log('Filhos ' + nodes[id].children.length);
+            console.log('Pai ' + nodes[id].data.parent);
+            console.log('----------------------');
+
+            if (nodes[id].children.length > 1) {
+                console.log('Lista de  filhos  de ' + id);
+                for(var i=0;i<nodes[id].children.length;i++){
+                    console.log('Filho ' + i + ':' + nodes[id].children[i].data.id);
+                }
+            } else {
+                console.log('O item ' + id + ' não tem filhos');
+            }
+            */
+
+            while(nodes[id].children.length > 0 ){
+                i = 0;
+                //console.log('Chamando o delete nos filhos de ' + id);
+                //console.log('Vou deletar ' + nodes[id].children[i].data.id);
                 self.deleteNode(nodes[id].children[i].data.id);
             }
+
+            //console.log('Voltei no ' + id);
             nodes[nodes[id].data.parent].removeChild(id);
             delete nodes[id];
             self.draw();
