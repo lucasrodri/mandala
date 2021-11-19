@@ -56,7 +56,7 @@ function mandalaFunction($params) {
 add_shortcode('shortcode_mandala', 'mandalaFunction');
 
 /** Função que renderiza a mandala HighCharts
-	Ex: [shortcode_mandala_hc"] 
+	Ex: [shortcode_mandala_hc] 
 **/
 function mandalaHighCharts($params) {
 	$html = '<div class="highcharts-figure">
@@ -79,6 +79,15 @@ function mandala_menu() {
 		'mandala_admin_page'
 		//'dashicons-schedule',
 		//3
+	);
+
+	add_submenu_page( 
+		'mandala-editor',
+		__( 'Visualizar Mandala', 'mandala-plugin' ),
+		__( 'Visualizar', 'mandala-plugin' ),
+		'manage_options',
+		'mandala-view',
+		'mandala_admin_view'
 	);
 }
 add_action( 'admin_menu', 'mandala_menu' );
@@ -103,8 +112,16 @@ function mandala_admin_page() {
 	<?php
 }
 
+/** Página de visualização */
+function mandala_admin_view() {
+	echo '<h1>Visualizador da Mandala:</h1>';
+	echo '<div style="width: 50%;">';
+	echo do_shortcode( '[shortcode_mandala_hc]' );
+	echo ' </div>';
+}
+
 //Adding Styles and Scripts to WordPress Custom Admin Pages
-function load_custom_wp_admin_style($hook) {
+function load_custom_wp_mandala_editor($hook) {
 	$ver = time();
 
 	// Load only on ?page=mypluginname
@@ -121,9 +138,27 @@ function load_custom_wp_admin_style($hook) {
 	wp_enqueue_script( 'js_mandala_admin', MANDALA_JS_URL . 'functions-editor.js' , array('js_orgchart', 'js_jquery_orgchart'), $ver );
 	wp_enqueue_script( 'js_orgchart', MANDALA_JS_URL . 'jquery.orgchart.js' , array('js_jquery_orgchart'), $ver );
 	wp_enqueue_script( 'js_jquery_orgchart', MANDALA_JS_URL . 'jquery-1.11.1.min.js' , array(), $ver );
+}
+add_action( 'admin_enqueue_scripts', 'load_custom_wp_mandala_editor' );
+
+//Adding Styles and Scripts to WordPress Custom Admin Pages
+function load_custom_wp_mandala_viewer($hook) {
+	$ver = time();
+
+	// Load only on ?page=mypluginname
+	if( $hook != 'mandala_page_mandala-view' ) {
+		 return;
+	}
+	// para o visualizador da mandala
+	wp_enqueue_script( 'js_mandala_hc', MANDALA_JS_URL . 'functions-highcharts.js' , array('js_hc', 'js_hc_sunburst', 'js_hc_exporting', 'js_hc_export_data', 'js_hc_accessibility'), false, $ver );
+	wp_enqueue_script( 'js_hc', MANDALA_JS_ORG_URL . 'highcharts.js' , array(), $ver );
+	wp_enqueue_script( 'js_hc_sunburst', MANDALA_JS_ORG_URL . 'sunburst.js' , array(), $ver );
+	wp_enqueue_script( 'js_hc_exporting', MANDALA_JS_ORG_URL . 'exporting.js' , array(), $ver );
+	wp_enqueue_script( 'js_hc_export_data', MANDALA_JS_ORG_URL . 'export-data.js' , array(), $ver );
+	wp_enqueue_script( 'js_hc_accessibility', MANDALA_JS_ORG_URL . 'accessibility.js' , array(), $ver );
 
 }
-add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
+add_action( 'admin_enqueue_scripts', 'load_custom_wp_mandala_viewer' );
 
 
 //https://codex.wordpress.org/AJAX_in_Plugins
